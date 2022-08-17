@@ -30,7 +30,7 @@ npm install
 
 #prod
 ```
-npm run start
+pm2 start ./bin/www localhost 3000
 ```
 
 #dev
