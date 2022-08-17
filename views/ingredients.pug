@@ -1,0 +1,24 @@
+extends layout
+
+block content
+	body.layout-full
+		div.page
+			div.ingredients
+				div.page-header
+					div.col-md-3
+						ol.breadcrumb
+							li.breadcrumb-item
+								a(href=process.env['WEB_URL']+'/') 首頁
+							li.breadcrumb-item 食材
+					h1.page-title 食材 
+						a.btn.btn-secondary(href=process.env['WEB_URL']+'/dishes') 看全部食譜
+
+				div.page-content
+					div.panel
+						div.panel-body.container-fluid
+							div.row
+								each ingredient in ingredients
+									div.col-md-2.card
+										h4 #{ingredient.name}
+										span #{ingredient.quantity + ingredient.unit} #{ingredient.price} 元
+										img.img-thumbnail.border-success(src=ingredient.src alt=ingredient.name width=150)

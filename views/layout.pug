@@ -1,0 +1,10 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href=process.env['STATIC_URL']+'/node_modules/bootstrap/dist/css/bootstrap.min.css')
+    link(rel='stylesheet', href=process.env['STATIC_URL']+'/node_modules/bootstrap-icons/font/bootstrap-icons.css')
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic')
+    link(rel='stylesheet', href=process.env['STATIC_URL']+'/public/stylesheets/style.css')
+    
+    block content

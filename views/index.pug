@@ -1,0 +1,19 @@
+extends layout
+
+block content
+	body.layout-full
+		div.page.vertical-align.text-center
+			div.page-content.vertical-align-middle.col-md-12
+				div.col-md-12
+					div.row
+						div.col-md-4
+							div.card
+								a.btn.btn-primary.btn-round(href=process.env['WEB_URL']+'/ingredients') 看食材
+						div.col-md-4
+							div.card
+								a.btn.btn-primary.btn-round(href=process.env['WEB_URL']+'/dishes') 看食譜
+						div.col-md-4
+							div.card
+								a.btn.btn-primary.btn-round(href='https://docs.google.com/spreadsheets/d/1SFI32cQLK4QhPINfIDiEF1_FK3nOpOcDSUZ-Sc_B-iw/edit?usp=sharing' target='_blank') google-spreadsheet
+	
+

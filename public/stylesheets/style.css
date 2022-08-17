@@ -1,0 +1,105 @@
+body, html {
+  height: 100%;
+}
+
+body {
+	margin: 0;
+  font-family: Roboto,sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.57142857;
+  color: #333333;
+  text-align: left;
+  background: #f1f4f5;
+}
+
+body.layout-full {
+  padding-top: 0;
+  height: 100%;
+}
+
+.layout-full .page {
+  height: 100%;
+  padding: 0;
+  margin: 0!important;
+  background-color: transparent;
+}
+
+.page-content {
+  padding: 30px 30px;
+}
+
+.page {
+  position: relative;
+  min-height: calc(100% - 44px);
+}
+
+.page-error header h1 {
+  font-size: 10em;
+  font-weight: 400;
+}
+
+.page-error header p {
+  margin-bottom: 30px;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.page-error .error-advise {
+  margin-bottom: 25px;
+  color: #A9AFB5;
+}
+
+.vertical-align {
+  font-size: 0;
+}
+
+.vertical-align::before {
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	content: "";
+}
+
+.vertical-align-middle {
+  vertical-align: middle;
+}
+
+.vertical-align-bottom, .vertical-align-middle {
+  display: inline-block;
+  max-width: 100%;
+  font-size: 1rem;
+}
+
+.card{
+	padding: 1rem;
+	margin: 0.5rem;
+}
+
+.page-header {
+  position: relative;
+  z-index: 1100;
+  padding: 30px 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+  background: 0 0;
+  border-bottom: 0;
+}
+
+.page-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 26px;
+}
+
+.page-header+.page-content {
+  padding-top: 0;
+}
+
+.page-content {
+  padding: 30px 30px;
+}
+
+.dishes .search {
+   padding: 1rem;
+}
