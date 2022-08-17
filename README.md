@@ -1,9 +1,9 @@
 # 專案說明
-因為平時在想要怎麼抓買菜的份量和成本
-而且又想要寫看看node.js
-所以就用 google sheet 結合 Express 來寫看看
-第一次接觸 Express，發現不難
-上手三天後產生第一版作品
+因為平時在想要怎麼抓買菜的份量和成本</br>
+而且又想要寫看看node.js</br>
+所以就用 google sheet 結合 Express 來寫看看</br>
+第一次接觸 Express，發現不難</br>
+上手三天後產生第一版作品</br>
 
 
 # 安裝步驟
