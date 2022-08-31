@@ -41,6 +41,7 @@ npm run dev
 
 
 # 改裝在 Google Cloud Run 的筆記
+結論：Google Cloud Run 的 secret 功能很難用，還是直接用 VM 比較好 ＝ ＝
 ```
 gcloud run deploy --source .
 gcloud config set run/region asia-east1
