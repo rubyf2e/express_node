@@ -23,17 +23,27 @@ nginx
 
 ```
 
-#安裝
+## 安裝
 ```
 npm install
 ```
 
-#prod
+## prod
 ```
 pm2 start ./bin/www localhost 3000
 ```
 
-#dev
+## dev
 ```
 npm run dev
 ```
+
+
+
+# 改裝在 Google Cloud run 的筆記
+```
+gcloud run deploy
+gcloud config set run/region asia-east1
+
+```
+
