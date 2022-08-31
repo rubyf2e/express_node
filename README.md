@@ -50,5 +50,6 @@ gcloud builds submit --tag asia-east1-docker.pkg.dev/dishes-2022-08-16/cloud-run
 gcloud auth configure-docker
 docker build . --tag asia-east1-docker.pkg.dev/dishes-2022-08-16/cloud-run-source-deploy/expressnode:latest
 docker push asia-east1-docker.pkg.dev/dishes-2022-08-16/cloud-run-source-deploy/expressnode:latest
+PORT=3000 && docker run -p 3000:${PORT} -e PORT=${PORT} asia-east1-docker.pkg.dev/dishes-2022-08-16/cloud-run-source-deploy/expressnode:latest
 ```
 
