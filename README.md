@@ -44,6 +44,8 @@ npm run dev
 ```
 gcloud run deploy --source .
 gcloud config set run/region asia-east1
+gcloud auth configure-docker
+gcloud builds submit --tag asia-east1-docker.pkg.dev/dishes-2022-08-16/cloud-run-source-deploy/expressnode:latest
 
 ```
 
