@@ -48,7 +48,7 @@ gcloud builds submit --tag asia-east1-docker.pkg.dev/dishes-2022-08-16/cloud-run
 
 
 gcloud auth configure-docker
-docker build . --tag asia-east1-docker.pkg.dev/dishes-2022-08-16/cloud-run-source-deploy/helloworld:latest
-docker push asia-east1-docker.pkg.dev/dishes-2022-08-16/cloud-run-source-deploy/helloworld:latest
+docker build . --tag asia-east1-docker.pkg.dev/dishes-2022-08-16/cloud-run-source-deploy/expressnode:latest
+docker push asia-east1-docker.pkg.dev/dishes-2022-08-16/cloud-run-source-deploy/expressnode:latest
 ```
 
