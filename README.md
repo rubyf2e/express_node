@@ -23,17 +23,33 @@ nginx
 
 ```
 
-#安裝
+## 安裝
 ```
 npm install
 ```
 
-#prod
+## prod
 ```
-npm run start
+pm2 start ./bin/www localhost 3000
 ```
 
-#dev
+## dev
 ```
 npm run dev
 ```
+
+
+
+# 改裝在 Google Cloud Run 的筆記
+```
+gcloud run deploy --source .
+gcloud config set run/region asia-east1
+gcloud builds submit --tag asia-east1-docker.pkg.dev/dishes-2022-08-16/cloud-run-source-deploy/expressnode:latest
+
+
+gcloud auth configure-docker
+docker build . --tag asia-east1-docker.pkg.dev/dishes-2022-08-16/cloud-run-source-deploy/expressnode:latest
+docker push asia-east1-docker.pkg.dev/dishes-2022-08-16/cloud-run-source-deploy/expressnode:latest
+PORT=3000 && docker run -p 3000:${PORT} -e PORT=${PORT} asia-east1-docker.pkg.dev/dishes-2022-08-16/cloud-run-source-deploy/expressnode:latest
+```
+
