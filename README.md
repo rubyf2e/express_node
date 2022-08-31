@@ -42,7 +42,7 @@ npm run dev
 
 # 改裝在 Google Cloud Run 的筆記
 ```
-gcloud run deploy
+gcloud run deploy --source .
 gcloud config set run/region asia-east1
 
 ```
